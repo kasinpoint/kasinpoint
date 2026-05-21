@@ -94,7 +94,7 @@ nav {
   height: 190px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center 38%;
   border: 4px solid var(--gold);
   flex-shrink: 0;
 }
@@ -622,15 +622,41 @@ footer a:hover { color: var(--gold); }
 
 /* RESPONSIVE */
 @media (max-width: 700px) {
+  .hero {
+    padding: 2.5rem 0 3rem;
+  }
+
   .hero-inner {
     flex-direction: column;
     text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
   }
+
+  .hero-left {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+
+  .hero-usf-logo {
+    height: 56px !important;
+  }
+
+  .hero-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero-text h1 { font-size: 2rem; }
+  .hero-tagline { font-size: 0.8rem; }
   .hero-text p { margin: 0 auto; }
   .hero-actions { justify-content: center; }
   .card-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .resume-embed { height: 600px; }
-  .nav-links { gap: 1.25rem; }
+  .resume-embed { height: 500px; }
+  .resume-doc { padding: 1.5rem; }
+  .nav-links { gap: 1.1rem; }
+  .nav-links a { font-size: 0.75rem; }
+  .container { padding: 0 1.25rem; }
 }
